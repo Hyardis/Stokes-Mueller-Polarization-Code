@@ -108,11 +108,11 @@ def get_n(material, E_eV, source = "auto", cite = True):
 
         case "Au":
             category = "main"
-            if 3.542E-03 <= wavelength_um <= 8.266E-01:
+            if 3.542E-03 <= wavelength_um.all() <= 8.266E-01:
                 author = "Hagemann-2"
-            elif 0.017586 <= wavelength_um <= 2.479684:
+            elif 0.017586 <= wavelength_um.all() <= 2.479684:
                 author = "Werner"
-            elif 8.266E-06 <= wavelength_um <= 2.480E+02:
+            elif 8.266E-06 <= wavelength_um.all() <= 2.480E+02:
                 author = "Hagemann"
             else:
                 out_of_range()
