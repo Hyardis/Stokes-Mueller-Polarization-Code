@@ -30,7 +30,7 @@ def eV2nm(E_eV):
     See Also
     --------
     nm2eV :
-        Reverse transformation.
+        Inverse transformation.
     """
     lambda_nm = 10**9*con.Planck*con.c/con.electron_volt/E_eV
     return lambda_nm
@@ -53,7 +53,7 @@ def nm2eV(lambda_nm):
     See Also
     --------
     eV2nm :
-        Reverse transformation.
+        Inverse transformation.
     """
     E_eV = 10**9*con.Planck*con.c/con.electron_volt/lambda_nm
     return E_eV

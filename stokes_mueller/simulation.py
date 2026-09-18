@@ -59,7 +59,7 @@ def plot_spectrum(material = "Au", theta = (70, 50, 70), show = "fractional pola
         Default is 'auto', which will select the best available source for the given beam energy.
     formalism : str, optional
         Sign convention for helicity. 'Schmising' (by default) or 'Koide'
-    preset: str, optional
+    preset : str, optional
         bypass all parameters and reconstrunct calculations from literature. "Koide 3a" or "Koide 3b".
         Default is "none".
 
